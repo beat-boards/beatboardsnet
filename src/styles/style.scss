@@ -5,12 +5,13 @@ $turquoise: #a6ffcf;
 $cyan: #00ffff;
 $blue: 	#209cee;
 $purple: #8800ff;
+$darker: #0d0d0d;
 
 $light: $black-ter;
 $dark: $grey-lighter;
 $primary: $cyan;
 $info: $blue;
-$background: $grey-darker;
+$background: $darker;
 $border: $grey-dark;
 $border-hover: $grey;
 $text: $white-ter;
@@ -24,5 +25,10 @@ $link-active-border: $grey-light;
 
 $body-background-color: $black-ter;
 
-@import "~bulma/sass/utilities/all";
-@import "~bulma/sass/base/all";
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/components/_all.sass";
+@import "~bulma/sass/elements/_all.sass";
+@import "~bulma/sass/form/_all.sass";
+@import "~bulma/sass/grid/_all.sass";
+@import "~bulma/sass/layout/_all.sass";

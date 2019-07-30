@@ -7,6 +7,7 @@
 <script lang="ts">
   import Home from '@/components/Home.vue' // @ is an alias to /src
   import { Component, Vue } from 'vue-property-decorator'
+  import '../styles/style.scss'
 
   @Component({
     components: {

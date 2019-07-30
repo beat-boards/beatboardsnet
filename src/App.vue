@@ -1,31 +1,43 @@
-
-
 <template>
   <div id="app">
     <div id="nav">
-      <section class="hero is-fullheight is-primary is-bold">
-        <div class="hero-head">
-          <nav class="navbar">
-            <div class="navbar-brand">
-              
-
-              <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav}">
-                <span></span>
-                <span></span>
-                <span></span>
+      <nav class="navbar is-light has-shadow" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href="/"><img src="./assets/smalllogo.png" width="50" height="25" style="padding: 3px;"></a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+          </div>
+          <div class="navbar-menu" v-bind:class="{'is-active': isOpen}">
+              <div class="navbar-start">
+                  <router-link to="/" class="navbar-item is-tab">Home</router-link>
+                  <router-link to="/about" class="navbar-item is-tab">About</router-link>
+                  <router-link to="/global" class="navbar-item is-tab">Global</router-link>
               </div>
-
-              <div class="navbar-menu" :class="{ 'is-active': showNav }">
-                <div class="navbar-end">
-                  <a class="navbar-item" href="/about">About</a>
-                  <a class="navbar-item" href="/global">Global</a>
-                </div>
-
-              </div>
-            </div>
-          </nav>
-        </div>
-      </section>
+          </div>
+          </div>
+      </nav>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+  import './styles/style.scss'
+
+  export default {
+    data () {
+      return {
+        isOpen: false
+      }
+    }
+  }
+</script>
+
+<style>
+  html {
+    overflow-y: auto
+  }
+</style>
