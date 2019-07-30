@@ -16,10 +16,12 @@
                   <router-link to="/" class="navbar-item is-tab">Home</router-link>
                   <router-link to="/about" class="navbar-item is-tab">About</router-link>
                   <router-link to="/global" class="navbar-item is-tab">Global</router-link>
+                  
               </div>
           </div>
           </div>
       </nav>
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -36,6 +38,7 @@
 
 <style>
   html {
-    overflow-y: auto
+    overflow-y: auto;
   }
+  
 </style>

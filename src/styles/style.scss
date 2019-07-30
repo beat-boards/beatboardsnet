@@ -5,23 +5,36 @@ $turquoise: #a6ffcf;
 $cyan: #00ffff;
 $blue: 	#209cee;
 $purple: #8800ff;
-$darker: #0d0d0d;
+$darker: #1d1d1d;
+$black: rgb(15, 15, 15);
+$darkish: #252525;
+$transparent: hsla(0, 0%, 0%, 0);
 
-$light: $black-ter;
+$box-shadow: 4px 4px 4px 4px rgba($black, .5);
+
+$light: $darker;
 $dark: $grey-lighter;
 $primary: $cyan;
 $info: $blue;
-$background: $darker;
+$background: $black;
 $border: $grey-dark;
 $border-hover: $grey;
 $text: $white-ter;
 $text-light: $grey-lighter;
 $text-strong: $white-bis;
+$link: $cyan;
 $link-hover: $grey-lighter;
 $link-hover-border: $grey-dark;
 $link-focus: $grey-lighter;
 $link-active: $grey-lighter;
 $link-active-border: $grey-light;
+
+$title-color: $grey-lighter;
+$subtitle-color: $grey;
+$navbar-background-color: $darkish;
+$navbar-item-color: $dark;
+$navbar-item-hover-color: $purple;
+$navbar-tab-active-border-bottom-color: $transparent;
 
 $body-background-color: $black-ter;
 
