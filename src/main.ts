@@ -6,6 +6,10 @@ import './styles/style.scss'
 Vue.config.productionTip = false
 
 new Vue({
+  el: '#app',
+  data: {
+    showNav: false
+  },
   router,
   render: (h) => h(App)
 }).$mount('#app')
