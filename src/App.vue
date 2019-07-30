@@ -25,8 +25,6 @@
 </template>
 
 <script lang="ts">
-  import './styles/style.scss'
-
   export default {
     data () {
       return {
