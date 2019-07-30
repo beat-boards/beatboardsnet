@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import "~bulma/sass/utilities/initial-variables";
+
+$turquoise: #a6ffcf;
+$cyan: #00ffff;
+$blue: 	#209cee;
+$purple: #8800ff;
+
+$light: $black-ter;
+$dark: $grey-lighter;
+$primary: $cyan;
+$info: $blue;
+$background: $grey-darker;
+$border: $grey-dark;
+$border-hover: $grey;
+$text: $white-ter;
+$text-light: $grey-lighter;
+$text-strong: $white-bis;
+$link-hover: $grey-lighter;
+$link-hover-border: $grey-dark;
+$link-focus: $grey-lighter;
+$link-active: $grey-lighter;
+$link-active-border: $grey-light;
+
+$body-background-color: $black-ter;
+
+@import "~bulma/sass/utilities/all";
+@import "~bulma/sass/base/all";
