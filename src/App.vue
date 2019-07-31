@@ -1,25 +1,54 @@
 <template>
   <div id="app">
     <div id="nav">
-      <nav class="navbar is-light has-shadow" role="navigation" aria-label="main navigation">
+      <nav
+        class="navbar is-light has-shadow"
+        role="navigation"
+      >
         <div class="container">
           <div class="navbar-brand">
-            <a href="/"><img src="./assets/smalllogo.png" width="50" height="25" style="padding: 3px;"></a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
+            <router-link to="/">
+              <img src="./assets/smalllogo.png"
+                   width="50"
+                   height="25"
+                   id="logo">
+            </router-link>
+            <a
+              role="button"
+              class="navbar-burger"
+              aria-label="menu"
+              @click="isOpen = !isOpen"
+              :class="{'is-active': isOpen}"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
             </a>
           </div>
-          <div class="navbar-menu" v-bind:class="{'is-active': isOpen}">
-              <div class="navbar-start">
-                  <router-link to="/" class="navbar-item is-tab">Home</router-link>
-                  <router-link to="/about" class="navbar-item is-tab">About</router-link>
-                  <router-link to="/global" class="navbar-item is-tab">Global</router-link>
-                  
-              </div>
+          <div class="navbar-menu"
+               :class="{'is-active': isOpen}">
+            <div class="navbar-start">
+              <router-link
+                to="/"
+                class="navbar-item is-tab"
+              >
+                Home
+              </router-link>
+              <router-link
+                to="/about"
+                class="navbar-item is-tab"
+              >
+                About
+              </router-link>
+              <router-link
+                to="/global"
+                class="navbar-item is-tab"
+              >
+                Global
+              </router-link>
+            </div>
           </div>
-          </div>
+        </div>
       </nav>
       <router-view></router-view>
     </div>
@@ -27,18 +56,19 @@
 </template>
 
 <script lang="ts">
-  export default {
-    data () {
-      return {
-        isOpen: false
-      }
-    }
+  import { Component, Vue } from 'vue-property-decorator'
+
+  @Component({})
+  export default class App extends Vue {
+    private isOpen: boolean = false
   }
 </script>
 
-<style>
-  html {
-    overflow-y: auto;
+<style
+  lang="scss"
+  scoped
+>
+  #logo {
+    padding: 8px;
   }
-  
 </style>

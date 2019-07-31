@@ -1,11 +1,11 @@
 <template>
   <div class="home">
-    
+
   </div>
 </template>
 
 <script lang="ts">
-  import Home from '@/components/Home.vue' // @ is an alias to /src
+  import Home from '@/components/Home.vue'
   import { Component, Vue } from 'vue-property-decorator'
 
   @Component({
