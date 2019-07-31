@@ -45,7 +45,7 @@
               <div class="column is-narrow">
                 <figure class="image is-128x128">
                   <img class="is-rounded"
-                       src="../assets/about/raftario.png"
+                       src="../assets/about/raftario.jpg"
                        alt="raftario"/>
                 </figure>
               </div>
