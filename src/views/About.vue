@@ -18,7 +18,8 @@
             as Ranking Points (RP). Ranking Points are added onto your profile and weighted. The global ranks order
             people
             in the amount of ranking points they have. Maps will be ranked based on the amount of upvotes it receives.
-            If a map reaches 100 upvotes, it will be considered to be ranked. This number is subject to change.
+            If a map reaches 100 upvotes, it will be considered to be ranked. If a map reaches 200 upvotes, it will be
+            automatically ranked. These numbers are subject to change.
           </p>
         </div>
         <div class="box has-background-light">
