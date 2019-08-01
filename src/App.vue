@@ -11,7 +11,8 @@
               <img src="./assets/smalllogo.png"
                    width="50"
                    height="25"
-                   id="logo">
+                   id="logo"
+                   alt="BeatBoards">
             </router-link>
             <a
               role="button"
