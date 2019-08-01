@@ -60,20 +60,33 @@
               <div class="column is-narrow">
                 <figure class="image is-128x128">
                   <img class="is-rounded"
-                       src="../assets/about/bigkitten.png"
-                       alt="BigKitten"/>
+                       src="../assets/about/elliot.png"
+                       alt="Brian Tate"/>
                 </figure>
               </div>
               <div class="column">
-                <h4 class="title is-4">BigKitten</h4>
-                <h5 class="subtitle is-5">Data collector</h5>
+                <h4 class="title is-4">elliottate</h4>
+                <h5 class="subtitle is-5">Curation leader and<br>bsaber integration</h5>
               </div>
             </div>
             <div class="columns is-mobile has-text-right">
               <div class="column">
-                <h4 class="title is-4">Tootie</h4>
+                <h4 class="title is-4">BigKitten</h4>
                 <h5 class="subtitle is-5">Data collector</h5>
               </div>
+              <div class="column is-narrow">
+                <figure class="image is-128x128">
+                  <img class="is-rounded"
+                       src="../assets/about/bigkitten.png"
+                       alt="BigKitten"/>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <div class="level"
+               id="row-2">
+            <div class="columns is-mobile">
               <div class="column is-narrow">
                 <figure class="image is-128x128">
                   <img class="is-rounded"
@@ -81,8 +94,14 @@
                        alt="Tootie"/>
                 </figure>
               </div>
+              <div class="column">
+                <h4 class="title is-4">Tootie</h4>
+                <h5 class="subtitle is-5">Data collector</h5>
+              </div>
             </div>
+            
           </div>
+
         </div>
       </div>
       <div class="section">
