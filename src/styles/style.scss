@@ -5,7 +5,7 @@ $turquoise: #a6ffcf;
 $cyan: #00ffff;
 $blue: #209cee;
 $purple: #8800ff;
-
+$transparent: #00000000;
 
 $light: $black-bis;
 $dark: $grey-lighter;
@@ -30,6 +30,10 @@ $navbar-background-color: $black-bis;
 $navbar-item-color: $text-light;
 
 $body-background-color: $black-ter;
+
+$table-background-color: $transparent;
+$table-color: $grey-lighter;
+$input-placeholder-color: $grey-lighter;
 
 @import "~bulma/sass/utilities/_all.sass";
 @import "~bulma/sass/base/_all.sass";

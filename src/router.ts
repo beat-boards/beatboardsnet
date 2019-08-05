@@ -23,6 +23,11 @@ export default new Router({
       path: '/global',
       name: 'global',
       component: () => import(/* webpackChunkName: "global" */ './views/Global.vue')
+    },
+    {
+      path: '/temp/user',
+      name: 'user',
+      component: () => import(/* webpackChunkName: "global" */ './views/User.vue')
     }
   ]
 })
