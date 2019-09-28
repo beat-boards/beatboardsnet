@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
-    "@vue/cli-plugin-typescript": "^3.9.0",
+    "@vue/cli-plugin-typescript": "^3.11.0",
     "@vue/cli-service": "^3.9.0",
     "bulma": "^0.7.5",
     "lint-staged": "^8.1.5",
