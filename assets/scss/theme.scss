@@ -1,7 +1,42 @@
 .dark-theme {
+  // Variables
+  // Common
+  --primary: #00FFFF;
+  --secondary: #7E22FF;
+  --background: #242424;
+  --background-accent: #121212;
+  --background-accent-secondary: #050505;
+  --background-inverted: #FCFCFC;
+
+  // Text
+  --text-on-background: #DBDBDB;
+  --text-on-background-accent: #B5B5B5;
+  --text-on-background-primary: #00FFFF;
+  --text-on-background-secondary: #7322E4;
+  --text-on-background-error: #CA3737;
+  --text-on-background-success: #26FF22;
+
+  // Spacing
+  --border-radius: 3px;
+  --xxsm: 4px;
+  --xsm: 8px;
+  --sm: 16px;
+  --default: 24px;
+  --md: 32px;
+  --lg: 48px;
+
+  // Default styling
   font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  background-color: var(--background);
+  color: var(--text-on-background);
+}
+
+
+html, body, #__nuxt, #__layout, .dark-theme {
+  height: 100%;
 }

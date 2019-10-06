@@ -1,0 +1,26 @@
+// --var cannot be used in media query
+// so this is plain sass variables
+$xsmall: 0px;
+$small: 768px; // Mobile
+$medium: 992px; // Tablet
+$large: 1024px; // Laptop
+$xlarge: 1215px; // Desktop
+$xxlarge: 1440px; // Desktop
+
+@mixin tablet {
+  @media (min-width: $small) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $xxlarge) {
+    @content;
+  }
+}
