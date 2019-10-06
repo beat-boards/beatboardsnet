@@ -4,7 +4,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Beat Boards',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -14,7 +14,10 @@ module.exports = {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600&display=swap' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -23,11 +26,17 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    'normalize.css/normalize.css',
+    '~/assets/scss/theme.scss'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    '~/plugins/fontawesome.ts'
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -60,4 +69,4 @@ module.exports = {
      */
     extend() {}
   }
-};
+}
