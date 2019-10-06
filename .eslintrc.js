@@ -9,17 +9,22 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
+    '@nuxtjs/eslint-config-typescript',
+    // 'prettier/vue',
+    // 'prettier',
     'plugin:nuxt/recommended',
-    '@nuxtjs/eslint-config-typescript'
   ],
-  plugins: ['prettier'],
+  plugins: [
+    // 'prettier'
+  ],
   // add your custom rules here
   rules: {
     'nuxt/no-cjs-in-config': 'off',
-    semi: 'off',
-    'space-before-function-paren': 'off'
+    'space-before-function-paren': 'off',
+    // 'prettier/prettier': ['error', { 
+    //   'parser': 'vue',
+    //   'endOfLine': 'auto'
+    // }]
+    'semi': 'error'
   }
 };
