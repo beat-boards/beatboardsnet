@@ -10,7 +10,9 @@
     "start": "cross-env NODE_ENV=production nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "test": "jest"
+    "test": "jest",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.25",
