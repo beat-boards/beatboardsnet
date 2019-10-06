@@ -20,11 +20,11 @@ export default Container
   margin: 0 auto;
 
   // Mobile
-  max-width: 324px;
+  // max-width: 324px;
 
-  @include tablet {
-    max-width: 672px;
-  }
+  // @include tablet {
+  //   max-width: 672px;
+  // }
 
   // Laptop
   @include laptop {
